@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="weather-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e0cdb8c08f.js" crossorigin="anonymous"></script>
+    <title>Weather forecast</title>
+</head>
+<body>
+<div class="allWeather">
+    <header>Open Weather API</header>
+
+    <main>
+        <div class="firstCity">
+            <div class="cityWeather">
+                <div class="cityName"></div>
+                <div class="temperature"></div>
+                <div class="clouds"></div>
+
+<!--                //side arrow-->
+                <i class="arrow moreInfoArrow fas fa-chevron-right"> </i>
+                <div class="sideInfo moreInfoHide">
+                </div>
+
+            </div>
+            <i class="arrow moreInfoArrow fas fa-chevron-down" ></i>
+            <div class="moreInfoHide">
+                <div>
+                    <p>W.Speed</p>
+                    <p class="windSpeed"></p>
+                </div>
+                <div>
+                    <p>W.Direction</p>
+                    <p><i class="windDirection fas fa-long-arrow-alt-up"></i></p>
+                </div>
+                <div>
+                    <p>Pressure</p>
+                    <p class="pressure"></p>
+                </div>
+                <div>
+                    <p>Sunrise</p>
+                    <p class="sunrise"></p>
+                </div>
+                <div class="sunsetDiv">
+                    <p>Sunset</p>
+                    <p class="sunset"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="secondCity">
+            <div class="cityWeather">
+                <div class="cityName"></div>
+                <div class="temperature"></div>
+                <div class="clouds"></div>
+
+<!--                //side arrow-->
+                <i class="arrow moreInfoArrow fas fa-chevron-right"> </i>
+                <div class="sideInfo moreInfoHide">
+                </div>
+            </div>
+            <i class="arrow moreInfoArrow fas fa-chevron-down" ></i>
+            <div class="moreInfoHide">
+                <div>
+                    <p>W.Speed</p>
+                    <p class="windSpeed"></p>
+                </div>
+                <div>
+                    <p>W.Direction</p>
+                    <p><i class="windDirection fas fa-long-arrow-alt-up"></i></p>
+                </div>
+                <div>
+                    <p>Pressure</p>
+                    <p class="pressure"></p>
+                </div>
+                <div>
+                    <p>Sunrise</p>
+                    <p class="sunrise"></p>
+                </div>
+                <div class="sunsetDiv">
+                    <p>Sunset</p>
+                    <p class="sunset"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="thirdCity">
+            <div class="cityWeather">
+                <div class="cityName"></div>
+                <div class="temperature"></div>
+                <div class="clouds"></div>
+
+<!--                side arrow-->
+                <i class="arrow moreInfoArrow fas fa-chevron-right"> </i>
+                <div class="sideInfo moreInfoHide">
+                </div>
+            </div>
+            <i class="arrow moreInfoArrow fas fa-chevron-down" ></i>
+            <div class="moreInfoHide">
+                <div>
+                    <p>W.Speed</p>
+                    <p class="windSpeed"></p>
+                </div>
+                <div>
+                    <p>W.Direction</p>
+                    <p><i class="windDirection fas fa-long-arrow-alt-up"></i></p>
+                </div>
+                <div>
+                    <p>Pressure</p>
+                    <p class="pressure"></p>
+                </div>
+                <div>
+                    <p>Sunrise</p>
+                    <p class="sunrise"></p>
+                </div>
+                <div class="sunsetDiv">
+                    <p>Sunset</p>
+                    <p class="sunset"></p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <button id="degC" class="degBtn-on">&deg;C</button>
+        <button id="degK" class="degBtn-off">&deg;K</button>
+    </footer>
+</div>
+
+
+<script src="getCityWeather.js"></script>
+<script src="date&time.js"></script>
+<script src="moreInfo.js"></script>
+
+</body>
+</html>

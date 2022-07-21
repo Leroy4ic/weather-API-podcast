@@ -1,0 +1,137 @@
+*{
+    justify-content: space-around;
+    font-family: 'Original Surfer', cursive;
+    color: white;
+    user-select: none;
+
+}
+body{
+    background-color: rgb(2, 97, 119);
+    background-image: url(nebo_oblaka_belyj_154700_1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+}
+.allWeather{
+    width: 600px;
+    margin: 5% auto;
+    box-shadow: 0 0 30px 10px rgb(5, 54, 67);
+    border-radius: 20px;
+}
+
+header{
+    background-color: rgb(34, 67, 74);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: xxx-large;
+}
+
+main{
+    background-color: #04849a;
+}
+
+.cityWeather{
+    display: flex;
+    align-items: center;
+    height: 110px;
+    font-size: xx-large;
+    position: relative;
+}
+
+.cityName{
+    width: 35%;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.sideInfo{
+    display: flex;
+    width: 410px;
+    font-size: medium;
+    position: absolute;
+    left: 101%;
+    box-shadow: 0 0 30px 10px rgb(44, 183, 220);
+
+}
+
+.moreInfoHide{
+    display: none;
+}
+
+.moreInfoShow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.moreInfoShow div{
+    background-color: #136b7b;
+    border-right: solid 2px white;
+    width: 20%;
+    padding: 1% 1%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.moreInfoShow :nth-last-child(1){
+    border: none;
+}
+
+p{
+    font-size: 22px;
+    margin: 2% auto;
+}
+
+.arrow{
+    cursor: pointer;
+}
+.arrow:hover{
+    color: #03315c;
+}
+.moreInfoArrow{
+    transform: rotate(0deg);
+}
+
+.fa-chevron-down{
+    margin-left: 300px;
+}
+
+footer{
+    display: flex;
+    height: 30px;
+    font-size: 25px;
+}
+
+footer button{
+    width: 50%;
+    border: none;
+    font-size: 22px;
+
+}
+
+#degC{
+    border-bottom-left-radius: 20px;
+}
+
+#degK{
+    border-bottom-right-radius: 20px;
+}
+
+footer button:hover{
+    cursor: pointer;
+}
+
+.degBtn-on{
+    background: #e0eeff;
+    color: rgb(34, 67, 74);
+}
+.degBtn-off{
+    background-color: rgb(34, 67, 74);
+    color: #e0eeff;
+}
