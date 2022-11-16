@@ -35,17 +35,21 @@ function getCityWeather(city, url){
             degK.addEventListener("click", tempDegK);
 
             function tempDegK(){
-                city.querySelector(".temperature").innerHTML = Math.round(data.main.temp + 273.15) + "&deg;K";
-                this.classList.remove("degBtn-off");
-                this.classList.add("degBtn-on");
-                degC.classList.add("degBtn-off");
-                for(let sideInfo of sideInfoAll){
+              if (degC.hasAttribute("degBtn-off")){
+                return;
+              } else {
+                  city.querySelector(".temperature").innerHTML = Math.round(data.main.temp + 273.15) + "&deg;K";
+                  this.classList.remove("degBtn-off");
+                  this.classList.add("degBtn-on");
+                  degC.classList.add("degBtn-off");
+                  for(let sideInfo of sideInfoAll){
                     sideInfo.innerHTML = "";
                     for (let i = 1; i < 8; i++){
                         let sideDiv = document.createElement("div");
                         sideDiv.innerHTML = `${getForecastDate(i)} ${Math.round(getForecastTemperature(31+273.15, 20+273.15))}&deg;K`;
                         sideInfo.append(sideDiv);
                     }
+                  }
                 }
             }
 
@@ -63,9 +67,9 @@ function getCityWeather(city, url){
                     for(let sideInfo of sideInfoAll){
                         sideInfo.innerHTML = "";
                         for (let i = 1; i < 8; i++){
-                            let sideDiv = document.createElement("div");
-                            sideDiv.innerHTML = `${getForecastDate(i)} ${Math.round(getForecastTemperature(31, 20))}&deg;C`;
-                            sideInfo.append(sideDiv);
+                          let sideDiv = document.createElement("div");
+                          sideDiv.innerHTML = `${getForecastDate(i)} ${Math.round(getForecastTemperature(31, 20))}&deg;C`;
+                          sideInfo.append(sideDiv);
                         }
                     }
                 }
